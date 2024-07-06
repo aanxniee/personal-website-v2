@@ -1,22 +1,22 @@
 // src/app/projects/page.js
-import { Box, Flex, Text, Link, VStack, HStack, Container } from '@chakra-ui/react';
+import { Box, Text, Link, VStack, HStack, Container } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import Card from "../../components/projectcard";
 import data from "../../projectdata";
 
 export default function Projects() {
     return (
-        <Container maxW="container.xl" p={8}>
-            <VStack spacing={8} align="start">
-                <HStack className="projects-back" spacing={4}>
+        <Container maxW="900px" p={8}>  {/* Set the max width to match the card's max width */}
+            <VStack spacing={8} align="start" width="100%">
+                <HStack spacing={4}>
                     <Link as={NextLink} href="/" className="link">
                         <Text as="i">back to home</Text>
                     </Link>
                 </HStack>
-                <Box className="projects-header">
+                <Box>
                     <Text fontSize="lg">some cool stuff i've done</Text>
                 </Box>
-                <Flex className="projects-list" wrap="wrap" justify="space-around">
+                <VStack spacing={8} width="100%">
                     {data.projects.map((project, index) => (
                         <Card
                             key={index}
@@ -27,7 +27,7 @@ export default function Projects() {
                             projectLink={project.url}
                         />
                     ))}
-                </Flex>
+                </VStack>
             </VStack>
         </Container>
     );
