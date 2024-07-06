@@ -59,7 +59,7 @@ export default function Home() {
               </Text>
             </VStack>
 
-            <VStack width="600px" pt={5} spacing={4} align="start">
+            <VStack width="650px" pt={5} spacing={4} align="start">
               <Text>recently, I...</Text>
               <List spacing={3} pl={14} styleType="disc">
                 <ListItem lineHeight="1.2">
@@ -68,7 +68,7 @@ export default function Home() {
                     <Text as="span" mx={1} fontWeight="bold" borderBottom="3px solid #76A2CE" color="#76A2CE">
                       Newfront
                     </Text>
-                  </Link> in San Francisco this summer - excited to dive deep into fintech and explore the west coast!
+                  </Link> in San Francisco, building backend services and LLM pipelines
                 </ListItem>
                 <ListItem lineHeight="1.2">
                   am leading a new team of 9 developers and designers to build tooling for the Humane Society with
@@ -90,7 +90,7 @@ export default function Home() {
               </List>
               <Text>and in other moments I'm...</Text>
               <List spacing={3} pl={14} styleType="disc">
-                <ListItem lineHeight="0.7">exploring nature trails and parks, enjoying the warmer weather that California has to offer</ListItem>
+                <ListItem lineHeight="0.7">exploring everything west coast, enjoying the warmer weather that California has to offer</ListItem>
                 <ListItem lineHeight="0.7">watching sunrises and sunsets in silence, taking in how pretty the world really is</ListItem>
                 <ListItem lineHeight="0.7">trying to find the best matcha and pastries in the city (any recs for SF?) </ListItem>
               </List>
