@@ -6,7 +6,7 @@ import data from "../../projectdata";
 
 export default function Projects() {
     return (
-        <Container maxW="900px" p={8}>  {/* Set the max width to match the card's max width */}
+        <Container maxW="900px" p={8}>
             <VStack spacing={8} align="start" width="100%">
                 <HStack spacing={4}>
                     <Link as={NextLink} href="/" className="link">

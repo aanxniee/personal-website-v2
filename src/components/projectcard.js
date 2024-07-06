@@ -1,15 +1,15 @@
 // src/components/projectcard.js
 import { Box, Image, Heading, Text, VStack, Link, HStack } from '@chakra-ui/react';
 
-export default function ProjectCard({ heading, techs, paragraph, imgUrl, projectLink }) {
+export default function ProjectCard({ heading, techs, date, paragraph, imgUrl, projectLink }) {
     return (
-        <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={5} width="100%" maxW="900px" height="250px"> {/* Match max width */}
-            <HStack spacing={8} align="start" height="100%">
+        <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={5} width="100%" maxW="900px" height={{ base: "auto", md: "250px" }}>
+            <HStack spacing={8} align="start" height="100%" flexWrap="wrap">
                 <Image
                     src={imgUrl}
                     alt={heading}
-                    width="300px"
-                    height="100%"
+                    width={{ base: "100%", md: "300px" }}
+                    height={{ base: "auto", md: "100%" }}
                     objectFit="cover"
                     borderRadius="lg"
                 />

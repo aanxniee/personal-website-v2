@@ -1,46 +1,47 @@
+// src/app/projects/page.js
 import { Box, Flex, Text, Link, Image, VStack, HStack, Container, Highlight, ListItem, List } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 export default function Home() {
   return (
-    <Container maxW="container.xl" height="100vh">
+    <Container maxW="container.xl" height="100vh" my={{ base: 10, md: 0 }} p={4}>
       <Flex
-        direction={{ base: 'column', md: 'row' }}
+        direction="column"
         height="100%"
         align="center"
         justify="center"
         className="home"
       >
-        <Box flex="1" p="5">
-          <VStack spacing={4} align="center">
-            <HStack spacing={8} justify="flex-end" width="100%">
+        <Box flex="1" p={5} width="100%">
+          <VStack spacing={4} align="center" width="100%">
+            <HStack spacing={8} justify={{ base: 'center', md: 'flex-end' }} width="100%" pb={{ base: 4, md: 0 }}>
               <Link as={NextLink} href="/resume" passHref><Text as="a">resume</Text></Link>
               <Link as={NextLink} href="/projects" passHref><Text as="a">projects</Text></Link>
             </HStack>
-            <HStack spacing={4}>
-              <VStack spacing={4}>
-                <Image borderRadius="full" src="/images/bay_bridge.jpg" alt="Bay Bridge" boxSize="70px" objectFit="cover" />
+            <HStack spacing={{ base: 2, md: 4 }} wrap="wrap" justify="center">
+              <VStack spacing={{ base: 2, md: 4 }}>
+                <Image borderRadius="full" src="/images/bay_bridge.jpg" alt="Bay Bridge" boxSize={{ base: '70px', md: '70px' }} objectFit="cover" />
+              </VStack>
+              <VStack spacing={4} display={{ base: 'none', md: 'flex' }}>
+                <Box height={{ base: '20px', md: '30px' }} />
+                <Image borderRadius="full" src="/images/coit.jpg" alt="San Francisco" boxSize={{ base: '100px', md: '120px' }} objectFit="cover" />
               </VStack>
               <VStack spacing={4}>
-                <Box height="30px" />
-                <Image borderRadius="full" src="/images/coit.jpg" alt="San Francisco" boxSize="120px" objectFit="cover" />
+                <Image borderRadius="full" src="/images/annie.jpg" alt="Annie" boxSize={{ base: '150px', md: '200px' }} objectFit="cover" />
               </VStack>
               <VStack spacing={4}>
-                <Image borderRadius="full" src="/images/annie.jpg" alt="Annie" boxSize="200px" objectFit="cover" />
+                <Box height={{ base: '10px', md: '90px' }} />
+                <Image borderRadius="full" src="/images/toronto.jpg" alt="Toronto" boxSize={{ base: '70px', md: '120px' }} objectFit="cover" />
               </VStack>
-              <VStack spacing={4}>
-                <Box height="90px" />
-                <Image borderRadius="full" src="/images/toronto.jpg" alt="Toronto" boxSize="120px" objectFit="cover" />
-              </VStack>
-              <VStack spacing={4}>
-                <Box height="40px" />
-                <Image borderRadius="full" src="/images/ocean_beach.jpg" alt="Ocean Beach" boxSize="80px" objectFit="cover" />
+              <VStack spacing={4} display={{ base: 'none', md: 'flex' }}>
+                <Box height={{ base: '20px', md: '40px' }} />
+                <Image borderRadius="full" src="/images/ocean_beach.jpg" alt="Ocean Beach" boxSize={{ base: '60px', md: '80px' }} objectFit="cover" />
               </VStack>
             </HStack>
-            <Text fontSize="2xl" fontWeight="bold">
+            <Text fontSize={{ base: '2xl', md: '3xl' }} fontWeight="bold">
               Hey, I'm Annie
             </Text>
-            <Text>
+            <Text textAlign="center">
               I'm studying
               <Highlight
                 query={["Systems Design Engineering", "University of Waterloo"]}
@@ -50,7 +51,7 @@ export default function Home() {
               </Highlight>
             </Text>
 
-            <VStack pt={5} spacing={0}>
+            <VStack pt={5} spacing={0} align="center">
               <Text px={2} lineHeight="1.3">
                 <Text as="span" fontWeight="bold" color="#76A2CE">excited for</Text> longer days, new homes in tech
               </Text>
@@ -59,9 +60,9 @@ export default function Home() {
               </Text>
             </VStack>
 
-            <VStack width="650px" pt={5} spacing={4} align="start">
+            <VStack width={{ base: '90%', md: '650px' }} pt={5} spacing={4} align="start">
               <Text>recently, I...</Text>
-              <List spacing={3} pl={14} styleType="disc">
+              <List spacing={3} pl={4} styleType="disc">
                 <ListItem lineHeight="1.2">
                   am working at
                   <Link href="https://www.newfront.com" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
@@ -89,14 +90,14 @@ export default function Home() {
                 </ListItem>
               </List>
               <Text>and in other moments I'm...</Text>
-              <List spacing={3} pl={14} styleType="disc">
-                <ListItem lineHeight="0.7">exploring everything west coast, enjoying the warmer weather that California has to offer</ListItem>
-                <ListItem lineHeight="0.7">watching sunrises and sunsets in silence, taking in how pretty the world really is</ListItem>
-                <ListItem lineHeight="0.7">trying to find the best matcha and pastries in the city (any recs for SF?) </ListItem>
+              <List spacing={3} pl={4} styleType="disc">
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>exploring everything west coast, enjoying the warmer weather that California has to offer</ListItem>
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>watching sunrises and sunsets in silence, taking in how pretty the world really is</ListItem>
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>trying to find the best matcha and pastries in the city (any recs for SF?) </ListItem>
               </List>
             </VStack>
 
-            <HStack spacing={4} alignSelf="flex-start" pt={5}>
+            <HStack spacing={4} alignSelf={{ base: 'center', md: 'flex-start' }} pt={5}>
               <Link href="https://github.com/aanxniee" isExternal>
                 <Image src="/images/github.png" alt="GitHub" boxSize="24px" />
               </Link>
@@ -110,6 +111,6 @@ export default function Home() {
           </VStack>
         </Box>
       </Flex>
-    </Container >
+    </Container>
   );
 }
