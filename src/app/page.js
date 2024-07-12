@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // src/app/projects/page.js
 import { Box, Flex, Text, Link, Image, VStack, HStack, Container, Highlight, ListItem, List } from '@chakra-ui/react';
 import NextLink from 'next/link';
@@ -50,7 +51,6 @@ export default function Home() {
                 Systems Design Engineering at the University of Waterloo
               </Highlight>
             </Text>
-
             <VStack pt={5} spacing={0} align="center">
               <Text px={2} lineHeight="1.3">
                 <Text as="span" fontWeight="bold" color="#76A2CE">excited for</Text> new homes in tech
@@ -58,9 +58,7 @@ export default function Home() {
               <Text px={2} lineHeight="1.3">
                 <Text as="span" fontWeight="bold" color="#76A2CE">inspired by</Text> big cities and skylines, people that love what they do
               </Text>
-
             </VStack>
-
             <VStack width={{ base: '90%', md: '650px' }} pt={5} spacing={4} align="start">
               <Text>recently, I...</Text>
               <List spacing={3} pl={4} styleType="disc">

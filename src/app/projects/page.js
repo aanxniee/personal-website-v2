@@ -1,6 +1,6 @@
 // src/app/projects/page.js
-import { Box, Text, Link, VStack, HStack, Container } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Box, Text, Link, VStack, HStack, Container } from "@chakra-ui/react";
+import NextLink from "next/link";
 import Card from "../../components/projectcard";
 import data from "../../projectdata";
 
