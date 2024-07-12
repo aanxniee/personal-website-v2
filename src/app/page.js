@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 
 export default function Home() {
   return (
-    <Container maxW="container.xl" height="100vh" my={{ base: 10, md: 0 }} p={4}>
+    <Container maxW="container.xl" my={{ base: 10, md: 0 }} p={4}>
       <Flex
         direction="column"
         height="100%"
@@ -53,43 +53,44 @@ export default function Home() {
 
             <VStack pt={5} spacing={0} align="center">
               <Text px={2} lineHeight="1.3">
-                <Text as="span" fontWeight="bold" color="#76A2CE">excited for</Text> longer days, new homes in tech
+                <Text as="span" fontWeight="bold" color="#76A2CE">excited for</Text> new homes in tech
               </Text>
               <Text px={2} lineHeight="1.3">
-                <Text as="span" fontWeight="bold" color="#76A2CE">inspired by</Text> big cities, large windows and tall buildings, people that love what they do
+                <Text as="span" fontWeight="bold" color="#76A2CE">inspired by</Text> big cities and skylines, people that love what they do
               </Text>
+
             </VStack>
 
             <VStack width={{ base: '90%', md: '650px' }} pt={5} spacing={4} align="start">
               <Text>recently, I...</Text>
               <List spacing={3} pl={4} styleType="disc">
-                <ListItem lineHeight="1.2">
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
                   am working at
                   <Link href="https://www.newfront.com" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <Text as="span" mx={1} fontWeight="bold" borderBottom="3px solid #76A2CE" color="#76A2CE">
+                    <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
                       Newfront
                     </Text>
-                  </Link> in San Francisco, building backend services and LLM pipelines
+                  </Link> in San Francisco, architecting backend services and LLM pipelines
                 </ListItem>
-                <ListItem lineHeight="1.2">
-                  am leading a new team of 9 developers and designers to build tooling for the Humane Society with
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
+                  am leading a team to develop a volunteer platform for the Humane Society with
                   <Link href="https://www.uwblueprint.org" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <Text as="span" mx={1} fontWeight="bold" borderBottom="3px solid #76A2CE" color="#76A2CE">
+                    <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
                       UW Blueprint
                     </Text>
                   </Link>
                 </ListItem>
-                <ListItem lineHeight="1.2">
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
                   spent autumn in Downtown Toronto at
                   <Link href="https://www.rbc.com/cyber-security/" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <Text as="span" mx={1} fontWeight="bold" borderBottom="3px solid #76A2CE" color="#76A2CE">
+                    <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
                       Royal Bank of Canada
                     </Text>
                   </Link>
-                  discovering some pretty interesting work in this problem space
+                  , building internal cybersecurity tools
                 </ListItem>
               </List>
-              <Text>and in other moments I'm...</Text>
+              <Text pt={6}>in other times, I'm...</Text>
               <List spacing={3} pl={4} styleType="disc">
                 <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>exploring everything west coast, enjoying the warmer weather that California has to offer</ListItem>
                 <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>watching sunrises and sunsets in silence, taking in how pretty the world really is</ListItem>
@@ -97,7 +98,7 @@ export default function Home() {
               </List>
             </VStack>
 
-            <HStack spacing={4} alignSelf={{ base: 'center', md: 'flex-start' }} pt={5}>
+            <HStack spacing={4} alignSelf={{ base: 'center', md: 'flex-start' }} pt={8}>
               <Link href="https://github.com/aanxniee" isExternal>
                 <Image src="/images/github.png" alt="GitHub" boxSize="24px" />
               </Link>
