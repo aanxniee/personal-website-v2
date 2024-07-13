@@ -60,10 +60,18 @@ export default function Home() {
               </Text>
             </VStack>
             <VStack width={{ base: '90%', md: '650px' }} pt={5} spacing={4} align="start">
-              <Text>recently, I...</Text>
+              <Text>currently, I'm...</Text>
               <List spacing={3} pl={4} styleType="disc">
                 <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
-                  am working at
+                  seeking Winter 2025 internships!
+                  <Link href="mailto:ajcai@uwaterloo.ca" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                    <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
+                      Get in touch!
+                    </Text>
+                  </Link>
+                </ListItem>
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
+                  interning at
                   <Link href="https://www.newfront.com" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
                       Newfront
@@ -71,13 +79,16 @@ export default function Home() {
                   </Link> in San Francisco, architecting backend services and LLM pipelines
                 </ListItem>
                 <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
-                  am leading a team to develop a volunteer platform for the Humane Society with
+                  leading a team to develop a volunteer platform for the Humane Society with
                   <Link href="https://www.uwblueprint.org" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
                     <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
                       UW Blueprint
                     </Text>
                   </Link>
                 </ListItem>
+              </List>
+              <Text pt={6}>in the past, I...</Text>
+              <List spacing={3} pl={4} styleType="disc">
                 <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
                   spent autumn in Downtown Toronto at
                   <Link href="https://www.rbc.com/cyber-security/" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
@@ -86,6 +97,20 @@ export default function Home() {
                     </Text>
                   </Link>
                   , building internal cybersecurity tools
+                </ListItem>
+                <ListItem lineHeight={{ base: "1.2", md: "0.7" }}>
+                  worked with
+                  <Link href="https://uwaterloo.ca/women-in-engineering/" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                    <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
+                      UW Women in Engineering
+                    </Text>
+                  </Link>
+                  and <Link href="https://www.techplusuw.com/" isExternal textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                    <Text as="span" mx={1} fontWeight="bold" borderBottom="2px solid #76A2CE" color="#76A2CE">
+                      UW Tech+
+                    </Text>
+                  </Link>
+                  to make tech more inclusive and diverse
                 </ListItem>
               </List>
               <Text pt={6}>in other times, I'm...</Text>
@@ -96,17 +121,20 @@ export default function Home() {
               </List>
             </VStack>
 
-            <HStack spacing={4} alignSelf={{ base: 'center', md: 'flex-start' }} pt={8}>
-              <Link href="https://github.com/aanxniee" isExternal>
-                <Image src="/images/github.png" alt="GitHub" boxSize="24px" />
-              </Link>
-              <Link href="https://www.linkedin.com/in/anniecai2004" isExternal>
-                <Image src="/images/linkedin.png" alt="LinkedIn" boxSize="24px" />
-              </Link>
-              <Link href="mailto:ajcai@uwaterloo.ca" isExternal>
-                <Image src="/images/mail.png" alt="Mail" boxSize="24px" />
-              </Link>
-            </HStack>
+            <Flex justifyContent="space-between" alignItems="center" width="100%" pt={8}>
+              <HStack spacing={4}>
+                <Link href="https://github.com/aanxniee" isExternal>
+                  <Image src="/images/github.png" alt="GitHub" boxSize="24px" />
+                </Link>
+                <Link href="https://www.linkedin.com/in/anniecai2004" isExternal>
+                  <Image src="/images/linkedin.png" alt="LinkedIn" boxSize="24px" />
+                </Link>
+                <Link href="mailto:ajcai@uwaterloo.ca" isExternal>
+                  <Image src="/images/mail.png" alt="Mail" boxSize="24px" />
+                </Link>
+              </HStack>
+              <Text>© Annie Cai, 2024</Text>
+            </Flex>
           </VStack>
         </Box>
       </Flex>
