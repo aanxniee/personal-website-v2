@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // src/app/projects/page.js
 import { Box, Text, Link, VStack, HStack, Container } from "@chakra-ui/react";
 import NextLink from "next/link";
@@ -14,7 +15,7 @@ export default function Projects() {
                     </Link>
                 </HStack>
                 <Box>
-                    <Text fontSize="lg">some cool stuff i've done</Text>
+                    <Text fontSize="lg">some cool stuff I've done</Text>
                 </Box>
                 <VStack spacing={8} width="100%">
                     {data.projects.map((project, index) => (

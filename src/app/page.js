@@ -16,7 +16,7 @@ export default function Home() {
         <Box flex="1" p={5} width="100%">
           <VStack spacing={4} align="center" width="100%">
             <HStack spacing={8} justify={{ base: 'center', md: 'flex-end' }} width="100%" pb={{ base: 4, md: 0 }}>
-              <Link as={NextLink} href="/resume" passHref><Text as="a">resume</Text></Link>
+              <Link as={NextLink} href="/images/resume.pdf" passHref><Text as="a">resume</Text></Link>
               <Link as={NextLink} href="/projects" passHref><Text as="a">projects</Text></Link>
             </HStack>
             <HStack spacing={{ base: 2, md: 4 }} wrap="wrap" justify="center">
