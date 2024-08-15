@@ -1,11 +1,11 @@
-import { Providers } from './providers'
+import { Providers } from "./providers";
 import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 
 export const eb_garamond = EB_Garamond({
-  subsets: ['latin'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Annie Cai",
@@ -13,7 +13,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Combine class names into one className attribute
   const classNames = `${eb_garamond.className} bg-neutral-100`;
 
   return (
