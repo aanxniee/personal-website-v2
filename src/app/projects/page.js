@@ -11,7 +11,7 @@ export default function Projects() {
             <VStack spacing={8} align="start" width="100%">
                 <HStack spacing={4}>
                     <Link as={NextLink} href="/" className="link">
-                        <Text as="i">back to home</Text>
+                        <Text as="i"> home</Text>
                     </Link>
                 </HStack>
                 <Box>
