@@ -90,26 +90,6 @@ export default function Home() {
                     </Text>
                   </Link>
                 </ListItem>
-                <ListItem>
-                  leading a team to develop a volunteer platform for the Humane
-                  Society with
-                  <Link
-                    href="https://www.uwblueprint.org"
-                    isExternal
-                    textDecoration="none"
-                    _hover={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      as="span"
-                      mx={1}
-                      fontWeight="bold"
-                      borderBottom="2px solid #76A2CE"
-                      color="#76A2CE"
-                    >
-                      UW Blueprint
-                    </Text>
-                  </Link>
-                </ListItem>
               </List>
 
               <Text pt={5}>in the past, I...</Text>
@@ -132,8 +112,27 @@ export default function Home() {
                     >
                       Newfront
                     </Text>
-                  </Link>{" "}
-                  in San Francisco
+                  </Link>
+                  , a series D insurance tech company in San Francisco
+                </ListItem>
+                <ListItem>
+                  led a team of 9 to build a pet care platform for the non-profit, Humane Society, with
+                  <Link
+                    href="https://www.uwblueprint.org"
+                    isExternal
+                    textDecoration="none"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    <Text
+                      as="span"
+                      mx={1}
+                      fontWeight="bold"
+                      borderBottom="2px solid #76A2CE"
+                      color="#76A2CE"
+                    >
+                      UW Blueprint
+                    </Text>
+                  </Link>
                 </ListItem>
                 <ListItem>
                   developed internal cybersecurity tools for
@@ -190,7 +189,7 @@ export default function Home() {
                       UW Tech+
                     </Text>
                   </Link>
-                  , making tech more inclusive and diverse
+                  to make tech more inclusive and diverse
                 </ListItem>
               </List>
 
