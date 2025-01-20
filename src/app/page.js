@@ -72,7 +72,27 @@ export default function Home() {
               <Text>currently, I'm...</Text>
               <List spacing={1} pl={4} styleType="disc">
                 <ListItem>
-                  seeking Winter 2025 internships!
+                  interning at
+                  <Link
+                    href="https://www.datadoghq.com"
+                    isExternal
+                    textDecoration="none"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    <Text
+                      as="span"
+                      mx={1}
+                      fontWeight="bold"
+                      borderBottom="2px solid #76A2CE"
+                      color="#76A2CE"
+                    >
+                      Datadog
+                    </Text>
+                    in NYC, working with distributed systems, streaming, and ingestion pipelines
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  seeking Fall 2025 internships!
                   <Link
                     href="mailto:ajcai@uwaterloo.ca"
                     isExternal
@@ -196,13 +216,9 @@ export default function Home() {
               <Text pt={5}>in other times, I'm...</Text>
               <List spacing={1} pl={4} styleType="disc">
                 <ListItem>
-                  exploring the west coast, enjoying the warmer weather that
-                  California has to offer
+                  exploring and eating my way through NYC, any recs?
                 </ListItem>
-                <ListItem>
-                  trying to find the best matcha and pastries in the city (any
-                  recs for SF?)
-                </ListItem>
+
               </List>
             </VStack>
           </VStack>
@@ -284,7 +300,7 @@ export default function Home() {
               <Image src="/images/mail.png" alt="Mail" boxSize="24px" />
             </Link>
           </HStack>
-          <Text>© Annie Cai, 2024</Text>
+          <Text>© Annie Cai, 2025</Text>
         </Flex>
       </Flex>
     </Container>
