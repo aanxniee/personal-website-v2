@@ -88,11 +88,11 @@ export default function Home() {
                     >
                       Datadog
                     </Text>
-                    in NYC, working with distributed systems, streaming, and ingestion pipelines
+                    in NYC, working with high performant Go and distributed systems
                   </Link>
                 </ListItem>
                 <ListItem>
-                  seeking Fall 2025 internships!
+                  seeking Fall 2025/Summer 2026 internships!
                   <Link
                     href="mailto:ajcai@uwaterloo.ca"
                     isExternal
