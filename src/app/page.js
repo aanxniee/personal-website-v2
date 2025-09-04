@@ -74,7 +74,7 @@ export default function Home() {
                 <ListItem>
                   interning at
                   <Link
-                    href="https://www.datadoghq.com"
+                    href="https://www.snowflake.com/en/"
                     isExternal
                     textDecoration="none"
                     _hover={{ textDecoration: "none" }}
@@ -86,13 +86,16 @@ export default function Home() {
                       borderBottom="2px solid #76A2CE"
                       color="#76A2CE"
                     >
-                      Datadog
+                      Snowflake
                     </Text>
-                    in NYC, working with high performant Go and distributed systems
+                    in Bellevue, working on networking infrastructure and traffic load balancing
                   </Link>
                 </ListItem>
                 <ListItem>
-                  seeking Fall 2025/Summer 2026 internships!
+                  researching synchronization techniques and locks at UWaterloo, under Prof. Golab
+                </ListItem>
+                <ListItem>
+                  seeking Summer 2026 internships!
                   <Link
                     href="mailto:ajcai@uwaterloo.ca"
                     isExternal
@@ -115,7 +118,27 @@ export default function Home() {
               <Text pt={5}>in the past, I...</Text>
               <List spacing={1} pl={4} styleType="disc">
                 <ListItem>
-                  architected backend services and LLM pipelines for an AI
+                  architected distributed caching and streaming observability pipelines at
+                  <Link
+                    href="https://www.datadoghq.com"
+                    isExternal
+                    textDecoration="none"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    <Text
+                      as="span"
+                      mx={1}
+                      fontWeight="bold"
+                      borderBottom="2px solid #76A2CE"
+                      color="#76A2CE"
+                    >
+                      Datadog
+                    </Text>
+                    in NYC
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  developed backend services and LLM pipelines for an AI
                   chatbot at
                   <Link
                     href="https://www.newfront.com"
@@ -153,26 +176,6 @@ export default function Home() {
                       UW Blueprint
                     </Text>
                   </Link>
-                </ListItem>
-                <ListItem>
-                  developed internal cybersecurity tools for
-                  <Link
-                    href="https://www.rbc.com/cyber-security/"
-                    isExternal
-                    textDecoration="none"
-                    _hover={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      as="span"
-                      mx={1}
-                      fontWeight="bold"
-                      borderBottom="2px solid #76A2CE"
-                      color="#76A2CE"
-                    >
-                      Royal Bank of Canada
-                    </Text>
-                  </Link>{" "}
-                  in Downtown Toronto
                 </ListItem>
                 <ListItem>
                   worked with
@@ -216,7 +219,10 @@ export default function Home() {
               <Text pt={5}>in other times, I'm...</Text>
               <List spacing={1} pl={4} styleType="disc">
                 <ListItem>
-                  exploring and eating my way through NYC, any recs?
+                  exploring and eating my way through the Seattle area
+                </ListItem>
+                <ListItem>
+                  finding comfort and challenge in words as I pick up reading again, any recs?
                 </ListItem>
 
               </List>
