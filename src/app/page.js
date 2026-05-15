@@ -264,7 +264,7 @@ export default function Home() {
             />
             <Image
               borderRadius="full"
-              src="/images/shibuya.jpg"
+              src="/images/shibuya.png"
               alt="Annie in Shibuya"
               boxSize={{ base: "100px", md: "150px" }}
               objectFit="cover"
