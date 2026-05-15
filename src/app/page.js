@@ -74,7 +74,7 @@ export default function Home() {
                 <ListItem>
                   interning at
                   <Link
-                    href="https://www.snowflake.com/en/"
+                    href="https://stripe.com/"
                     isExternal
                     textDecoration="none"
                     _hover={{ textDecoration: "none" }}
@@ -86,16 +86,16 @@ export default function Home() {
                       borderBottom="2px solid #76A2CE"
                       color="#76A2CE"
                     >
-                      Snowflake
+                      Stripe
                     </Text>
-                    in Bellevue, working on networking infrastructure and traffic load balancing
+                    in NYC, working on ML models and evaluation services to predict payment network costs
                   </Link>
                 </ListItem>
                 <ListItem>
                   researching synchronization techniques and locks at UWaterloo, under Prof. Golab
                 </ListItem>
                 <ListItem>
-                  seeking Summer 2026 internships!
+                  seeking 2027 new grad opportunities!
                   <Link
                     href="mailto:ajcai@uwaterloo.ca"
                     isExternal
@@ -116,7 +116,31 @@ export default function Home() {
               </List>
 
               <Text pt={5}>in the past, I...</Text>
+              
               <List spacing={1} pl={4} styleType="disc">
+                 <ListItem>
+                  spent an unforgettable 4 months studying abroad at NUS School of Computing in Singapore
+                </ListItem>
+                <ListItem>
+                  built a load testing framework for Envoy auto-scaling and load balancing at
+                  <Link
+                    href="https://www.snowflake.com"
+                    isExternal
+                    textDecoration="none"
+                    _hover={{ textDecoration: "none" }}
+                  >
+                    <Text
+                      as="span"
+                      mx={1}
+                      fontWeight="bold"
+                      borderBottom="2px solid #76A2CE"
+                      color="#76A2CE"
+                    >
+                      Snowflake
+                    </Text>
+                    
+                  </Link>
+                </ListItem>
                 <ListItem>
                   architected distributed caching and streaming observability pipelines at
                   <Link
@@ -136,27 +160,6 @@ export default function Home() {
                     </Text>
                     in NYC
                   </Link>
-                </ListItem>
-                <ListItem>
-                  developed backend services and LLM pipelines for an AI
-                  chatbot at
-                  <Link
-                    href="https://www.newfront.com"
-                    isExternal
-                    textDecoration="none"
-                    _hover={{ textDecoration: "none" }}
-                  >
-                    <Text
-                      as="span"
-                      mx={1}
-                      fontWeight="bold"
-                      borderBottom="2px solid #76A2CE"
-                      color="#76A2CE"
-                    >
-                      Newfront
-                    </Text>
-                  </Link>
-                  , a series D insurance tech company in San Francisco
                 </ListItem>
                 <ListItem>
                   led a team of 9 to build a pet care platform for the non-profit, Humane Society, with
@@ -219,10 +222,13 @@ export default function Home() {
               <Text pt={5}>in other times, I'm...</Text>
               <List spacing={1} pl={4} styleType="disc">
                 <ListItem>
-                  exploring and eating my way through the Seattle area
+                  eating because Beli grind never stops
                 </ListItem>
                 <ListItem>
                   finding comfort and challenge in words as I pick up reading again, any recs?
+                </ListItem>
+                <ListItem>
+                  running through Central Park or West Side Highway
                 </ListItem>
 
               </List>
@@ -239,8 +245,8 @@ export default function Home() {
           >
             <Image
               borderRadius="full"
-              src="/images/bay_bridge.jpg"
-              alt="Bay Bridge"
+              src="/images/fuji.jpg"
+              alt="Mount Fuji"
               boxSize={{ base: "60px", md: "60px" }}
               objectFit="cover"
               transition="transform 0.3s ease"
@@ -248,8 +254,8 @@ export default function Home() {
             />
             <Image
               borderRadius="full"
-              src="/images/coit.jpg"
-              alt="San Francisco"
+              src="/images/sd.jpg"
+              alt="San Diego"
               boxSize={{ base: "80px", md: "100px" }}
               objectFit="cover"
               display={{ base: "none", md: "block" }}
@@ -258,8 +264,8 @@ export default function Home() {
             />
             <Image
               borderRadius="full"
-              src="/images/annie.jpg"
-              alt="Annie"
+              src="/images/shibuya.jpg"
+              alt="Annie in Shibuya"
               boxSize={{ base: "100px", md: "150px" }}
               objectFit="cover"
               transition="transform 0.3s ease"
@@ -267,8 +273,8 @@ export default function Home() {
             />
             <Image
               borderRadius="full"
-              src="/images/toronto.jpg"
-              alt="Toronto"
+              src="/images/nyc.png"
+              alt="New York"
               boxSize={{ base: "60px", md: "100px" }}
               objectFit="cover"
               transition="transform 0.3s ease"
@@ -276,8 +282,8 @@ export default function Home() {
             />
             <Image
               borderRadius="full"
-              src="/images/ocean_beach.jpg"
-              alt="Ocean Beach"
+              src="/images/mbs.jpg"
+              alt="Singapore"
               boxSize={{ base: "60px", md: "60px" }}
               objectFit="cover"
               display={{ base: "none", md: "block" }}
@@ -306,7 +312,7 @@ export default function Home() {
               <Image src="/images/mail.png" alt="Mail" boxSize="24px" />
             </Link>
           </HStack>
-          <Text>© Annie Cai, 2025</Text>
+          <Text>© Annie Cai, 2026</Text>
         </Flex>
       </Flex>
     </Container>
