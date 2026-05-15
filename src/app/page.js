@@ -3,15 +3,40 @@ import {
   Flex,
   Text,
   Link,
-  Image,
   VStack,
   HStack,
+  Box,
   Container,
   Highlight,
   ListItem,
   List,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import NextImage from "next/image";
+
+function CirclePhoto({ src, alt, boxSize, display }) {
+  return (
+    <Box
+      position="relative"
+      overflow="hidden"
+      borderRadius="full"
+      boxSize={boxSize}
+      display={display}
+      transition="transform 0.3s ease"
+      _hover={{ transform: "scale(1.1)" }}
+      willChange="transform"
+    >
+      <NextImage
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 48em) 100px, 150px"
+        style={{ objectFit: "cover" }}
+        quality={75}
+      />
+    </Box>
+  );
+}
 
 export default function Home() {
   return (
@@ -124,7 +149,7 @@ export default function Home() {
                 <ListItem>
                   built a load testing framework for Envoy auto-scaling and load balancing at
                   <Link
-                    href="https://www.snowflake.com"
+                    href="https://www.snowflake.com/en/"
                     isExternal
                     textDecoration="none"
                     _hover={{ textDecoration: "none" }}
@@ -243,52 +268,32 @@ export default function Home() {
             mt={{ base: 8, md: 12 }}
             width={{ base: "100%", md: "auto" }}
           >
-            <Image
-              borderRadius="full"
+            <CirclePhoto
               src="/images/fuji.jpg"
               alt="Mount Fuji"
               boxSize={{ base: "60px", md: "60px" }}
-              objectFit="cover"
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.1)" }}
             />
-            <Image
-              borderRadius="full"
+            <CirclePhoto
               src="/images/sd.jpg"
               alt="San Diego"
               boxSize={{ base: "80px", md: "100px" }}
-              objectFit="cover"
               display={{ base: "none", md: "block" }}
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.1)" }}
             />
-            <Image
-              borderRadius="full"
+            <CirclePhoto
               src="/images/shibuya.png"
               alt="Annie in Shibuya"
               boxSize={{ base: "100px", md: "150px" }}
-              objectFit="cover"
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.1)" }}
             />
-            <Image
-              borderRadius="full"
+            <CirclePhoto
               src="/images/nyc.png"
               alt="New York"
               boxSize={{ base: "60px", md: "100px" }}
-              objectFit="cover"
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.1)" }}
             />
-            <Image
-              borderRadius="full"
+            <CirclePhoto
               src="/images/mbs.jpg"
               alt="Singapore"
               boxSize={{ base: "60px", md: "60px" }}
-              objectFit="cover"
               display={{ base: "none", md: "block" }}
-              transition="transform 0.3s ease"
-              _hover={{ transform: "scale(1.1)" }}
             />
           </VStack>
         </Flex>
@@ -303,13 +308,13 @@ export default function Home() {
         >
           <HStack spacing={4} mb={{ base: 4, md: 0 }}>
             <Link href="https://github.com/aanxniee" isExternal>
-              <Image src="/images/github.png" alt="GitHub" boxSize="24px" />
+              <NextImage src="/images/github.png" alt="GitHub" width={24} height={24} />
             </Link>
             <Link href="https://www.linkedin.com/in/anniecai2004" isExternal>
-              <Image src="/images/linkedin.png" alt="LinkedIn" boxSize="24px" />
+              <NextImage src="/images/linkedin.png" alt="LinkedIn" width={24} height={24} />
             </Link>
             <Link href="mailto:ajcai@uwaterloo.ca" isExternal>
-              <Image src="/images/mail.png" alt="Mail" boxSize="24px" />
+              <NextImage src="/images/mail.png" alt="Mail" width={24} height={24} />
             </Link>
           </HStack>
           <Text>© Annie Cai, 2026</Text>

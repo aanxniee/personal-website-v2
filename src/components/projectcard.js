@@ -1,6 +1,5 @@
 import {
     Box,
-    Image,
     Text,
     VStack,
     Link,
@@ -8,6 +7,7 @@ import {
     Flex,
     Highlight,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
 export default function ProjectCard({
     heading,
@@ -35,15 +35,23 @@ export default function ProjectCard({
                 justify="space-between"
                 height="100%"
             >
-                <Image
-                    src={imgUrl}
-                    alt={heading}
+                <Box
                     width={{ base: "100%", md: "250px" }}
-                    height={{ base: "auto", md: "100%" }}
-                    objectFit="cover"
+                    height={{ base: "180px", md: "100%" }}
+                    position="relative"
                     borderRadius="lg"
+                    overflow="hidden"
                     flexShrink={0}
-                />
+                >
+                    <Image
+                        src={imgUrl}
+                        alt={heading}
+                        fill
+                        sizes="(max-width: 48em) 100vw, 250px"
+                        style={{ objectFit: "cover" }}
+                        quality={75}
+                    />
+                </Box>
                 <VStack
                     align="flex-start"
                     spacing={2}
@@ -54,7 +62,7 @@ export default function ProjectCard({
                 >
                     <HStack width="100%" spacing={2} alignItems="center">
                         <Link href={projectLink} isExternal>
-                            <Image src="/images/github.png" alt="GitHub" boxSize="24px" />
+                            <Image src="/images/github.png" alt="GitHub" width={24} height={24} />
                         </Link>
                         <Text fontSize="xl" fontWeight="bold" textAlign="left">
                             {heading}
